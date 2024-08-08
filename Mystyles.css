@@ -1,0 +1,12 @@
+nav{
+    background-color:#fd8396;
+    color:whitesmoke;
+    padding:10px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    margin-right: 13px;
+}

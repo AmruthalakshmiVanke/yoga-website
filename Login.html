@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>HTML Login Form</title>
+      <link rel="stylesheet" href="Mystyles.css">
+      <script>
+        function loginValidation(){
+          var first=document.myform.first.value;
+          var password=document.myform.password.value;
+          if(first==null||password==""){
+            alert("name can't be blank")
+            return false;
+          }
+          else if(password.length<6){
+            alert("password must be 6 characters")
+            return false;
+        }
+        return true
+        }
+      </script>
+      <style>
+        /*style.css*/
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 40vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin-left:30%;
+    margin-right: 30%;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            margin-top: 6%;
+        }
+
+      </style>
+</head>
+
+<body>
+  <header align="right">
+    <nav>
+        <ul>
+   <li> <a href="Home.html">Home </a></li>
+    <li><a href="About.html">About </a></li>
+    <li><a href="Registration.html">Registration</a></li>
+    <li><a href="ContactUs.html">ContactUs </a></li>
+    <li><a href="Login.html">Login</a></li>
+        </ul>
+        </nav>
+    </header><br><br><br>
+    <div class="body">
+      <div class="main">
+            <h1>Radiant Yoga Center</h1>
+            <h3>Enter your login credentials</h3>
+            <form name="myform" action="loginsuc.html" onsubmit="return loginValidation(this)">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="first" 
+                         placeholder="Enter your Username">
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Enter your Password">
+
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="#"
+                     style="text-decoration: none;">
+                        Create an account
+                  </a>
+            </p>
+      </div>
+      </div>
+      <footer>
+        <h2>&copy;  2024 Yoga. ALL Rights Reserved</h2>
+    </footer>
+</body>
+
+</html>

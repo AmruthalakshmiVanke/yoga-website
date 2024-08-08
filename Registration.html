@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Mystyles.css">
+    <style>
+        body{
+            background:-moz-linear-gradient(1,2,3);
+        }
+        .form-container {
+            background-image:url("rb.jpg");
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        .b{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-left: 38%;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer{
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            margin-top: 6%;
+        }
+    </style>
+</head>
+<body>
+    <header align="right">
+        <nav>
+            <ul>
+       <li> <a href="Home.html">Home </a></li>
+        <li><a href="About.html">About </a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        <li><a href="ContactUs.html">ContactUs </a></li>
+        <li><a href="Login.html">Login</a></li>
+            </ul>
+            </nav>
+        </header>
+        <h2 align="center">Registration Form</h2>
+    <div class="form-container b">
+        
+        <form action="" >
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required>
+            
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            Schedule Preference:<br><input type="checkbox" value="f">Morning Session - 9:00AM to 11:00AM<br><br>
+            <input type="checkbox" value="f">Afternoon Session - 3:00AM to 4:00AM<br><br>
+            <input type="checkbox" value="f">Evening Session - 6:00AM to 7:30AM<br><br>
+            Class Level:<br><input type="checkbox" value="c">Level-1 BeginnerClass<br>
+            <input type="checkbox" value="f">Level-2 IntermediateClass<br>
+            <input type="checkbox" value="f">Level-3 AdvancedClass<br>
+            phone Number:<input type="tel" name="personal"id="per1"
+            pattern="[0-9]{10}" title="the ten digits number"><br><br>
+        
+
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <h2>&copy; 2024.Yoga All Rights Reserved</h2>
+    </footer>
+</body>
+</html>
